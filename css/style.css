@@ -1,0 +1,177 @@
+/* COMMON */
+* {
+  font-family: Raleway, sans-serif;
+}
+
+header, section, footer {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+
+/* HEADER */
+
+header .container {
+  padding: 0 42px;
+  font-size: 14px;
+  height: 41px;
+  background: black;
+  color: #ffffff;
+
+}
+
+
+.logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 27px;
+}
+
+span.highlight {
+  color: #00cfb6;
+  font-weight: bolder;
+}
+
+
+header nav.col {
+  float: right;
+  margin:
+}
+
+
+header nav.col li {
+  display: inline-block;
+}
+
+
+
+
+header nav.col a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 38px;
+}
+
+
+
+header nav.col a:hover {
+  cursor: pointer;
+}
+
+
+
+/*SECTION 1*/
+
+section:nth-of-type(1) .col {
+  width: 50%;
+  height: 503px;
+}
+
+section:nth-of-type(1) .container {
+  background: -moz-linear-gradient(top, rgba(153,153,153,0) 69%, rgba(153,153,153,0.65) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(153,153,153,0) 69%,rgba(153,153,153,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(153,153,153,0) 69%,rgba(153,153,153,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#a6999999',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+img {
+  width: 100%;
+  transform: scale(1.07);
+  padding-top:76px;
+  padding-left: 44px;
+}
+
+article {
+  width: 400px;
+  position: relative;
+  padding-top: 135px;
+
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 12px;
+  text-align: center;
+  padding: 0 85px;
+}
+
+.more {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px auto;
+  text-transform: uppercase;
+  background: #00cfb6;
+  border-radius: 10px;
+  width: 267px;
+  height: 56px;
+}
+
+section:nth-of-type(2) .row {
+  height: 350px;
+  background: white;
+}
+
+
+section:nth-of-type(2) .row .col .chair {
+  margin-left: 65px;
+  background: url('../image/box1_img.jpg') center/contain no-repeat;
+  height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section:nth-of-type(3) .row {
+  background: lightgreen;
+  height: 72px;
+}
+
+section:nth-of-type(3) .row .card {
+  width:300px;
+  height:
+  background: white;
+  margin: 30px;
+}

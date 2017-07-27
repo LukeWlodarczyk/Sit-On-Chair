@@ -10,8 +10,10 @@ header, section, footer {
 
 .container {
   width: 100%;
+  height: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  border: 1px solid orange;
 }
 
 .row::after {
@@ -27,54 +29,60 @@ header, section, footer {
 
 /* HEADER */
 
-header .container {
-  padding: 0 42px;
-  font-size: 14px;
-  height: 41px;
+header {
   background: black;
+  height: 41px;
   color: #ffffff;
+}
 
+header .container {
+  padding: 12px 58px;
 }
 
 
 .logo {
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 27px;
+  margin-left: 10px;
+  font-size: 14px
 }
 
 span.highlight {
-  color: #00cfb6;
+  color: #00c4aa;
   font-weight: bolder;
 }
 
 
 header nav.col {
   float: right;
-  margin:
 }
 
 
 header nav.col li {
   display: inline-block;
+  margin: 0 20px;
+}
+
+nav.col li:first-child {
+  margin: 0 27px;
 }
 
 
 
 
 header nav.col a {
-  display: block;
+  font-size: 14px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0 38px;
 }
 
 
 
 header nav.col a:hover {
   cursor: pointer;
+  color: #00c4aa;
 }
 
 

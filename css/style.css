@@ -141,7 +141,7 @@ header nav.col a:hover {
 
 section:nth-of-type(1) .col {
   width: 50%;
-  height: 503px;
+  height: 500px;
 }
 
 section:nth-of-type(1) .container {
@@ -149,7 +149,7 @@ section:nth-of-type(1) .container {
   background: -webkit-linear-gradient(top, rgba(153,153,153,0) 69%,rgba(153,153,153,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(153,153,153,0) 69%,rgba(153,153,153,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#a6999999',GradientType=0 ); /* IE6-9 */
-
+  position: relative;
 }
 
 
@@ -163,7 +163,8 @@ img {
 article {
   width: 400px;
   position: relative;
-  padding-top: 135px;
+  margin-top: 130px;
+  margin-left: -40px;
 
 }
 
@@ -173,26 +174,62 @@ h1 {
   text-align: center;
   font-size: 38px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 22px;
   text-align: center;
-  padding: 0 85px;
+
 }
 
 .more {
   color: #ffffff;
+  font-size: 24px;
   text-align: center;
-  padding: 20px 0;
-  margin: 20px auto;
+  padding: 16px 0;
+  margin: 28px auto;
   text-transform: uppercase;
-  background: #00cfb6;
+  background: #00c4aa;
   border-radius: 10px;
   width: 267px;
   height: 56px;
 }
+
+.more:hover {
+  cursor: pointer;
+}
+
+.arrows {
+  width: 48px;
+  height: 48px;
+  z-index: 1;
+  color: #00c4aa;
+}
+
+.arrows {
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  font-size: 83px;
+  font-weight: 300;
+  right: 76px;
+  top: 206px
+}
+
+.prev {
+  position: absolute;
+  font-size: 83px;
+  font-weight: 300;
+  left: 76px;
+  top: 206px
+}
+
+
+/*SECTION 2*/
 
 section:nth-of-type(2) .row {
   height: 350px;

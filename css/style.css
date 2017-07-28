@@ -8,12 +8,16 @@ header, section, footer {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid orange;
+
 }
 
 .row::after {
@@ -44,7 +48,9 @@ header .container {
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 10px;
-  font-size: 14px
+  font-size: 14px;
+  color: #ffffff;
+
 }
 
 span.highlight {
@@ -52,31 +58,75 @@ span.highlight {
   font-weight: bolder;
 }
 
-
+/*NAV*/
 header nav.col {
   float: right;
 }
 
 
-header nav.col li {
+li {
   display: inline-block;
   margin: 0 20px;
+  padding-bottom: 15px;
 }
 
-nav.col li:first-child {
+nav.col .aboutComList {
+  position: relative;
   margin: 0 27px;
 }
 
+li.aboutComList ul li {
+  margin: 0;
+  display: block;
+  padding-bottom: 0;
+}
 
+nav li ul {
+  position: absolute;
+  width: 120px;
+  height: 98px;
+  top: 40px;
+  left: -23px;
+  background: #000000;
+  width: 120px;
+  position: absolute;
+  display: none;
+}
 
+li.aboutComList ul a {
+  display: block;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-left: 12px;
+  font-weight: 400;
+  text-transform: none;
+}
 
-header nav.col a {
+.triangle {
+  position: absolute;
+  top: -10px;
+  left: 45px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+}
+
+nav li:hover ul {
+  display: block;
+  z-index: 1;
+}
+
+nav.col a {
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 
 
 

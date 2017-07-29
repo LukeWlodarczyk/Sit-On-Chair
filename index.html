@@ -39,7 +39,7 @@
       <div class="row ">
         <div class="col">
           <div class="image">
-            <img src="image/black_chair.png" alt="chair">
+            <img class="chair" src="image/black_chair.png" alt="chair">
           </div>
         </div>
         <div class="col">
@@ -97,7 +97,7 @@
               <p>Zakup towaru + dowóz</p>
               <p>Serwis</p>
             </div>
-            <a class="button" href="#">
+            <a class="button-join" href="#">
               Dołącz
             </a>
         </div>
@@ -111,7 +111,7 @@
               <p>Gwarancja 5 lat</p>
 
             </div>
-            <a class="button" href="#">
+            <a class="button-join" href="#">
               Dołącz
             </a>
         </div>
@@ -125,7 +125,7 @@
               <p>Gwarancja 5 lat</p>
               <p>Porady projektanta</p>
             </div>
-            <a class="button" href="#">
+            <a class="button-join" href="#">
               Dołącz
             </a>
         </div>
@@ -138,18 +138,39 @@
       <div class="row">
         <div class="col">
           <h2 class="heading">Kontakt</h2>
-
           <form class="form" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="Imię">
-            <input type="text" name="" value="" placeholder="email">
-            <textarea name="message" rows="10" cols="68"></textarea>
+            <input type="text" id="name" name="imie" value="" placeholder="Imię">
+            <input type="text" id="email" name="email" value="" placeholder="email">
+            <textarea name="message" rows="4" placeholder="Wiadomość"></textarea>
           </form>
         </div>
-        <div class="col"></div>
+        <div class="col">
+          <img class="red-chair" src="image/red_chair.png" alt="red chair">
+          <input id="accept" type="checkbox" name="" value="">
+          <label for="accept">Zgadzam się na przetwarzanie danych osobowych</label>
+          <a class="button-send" href="#">Wyślij</a>
+        </div>
       </div>
     </div>
   </section>
-  <footer></footer>
+  <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<small>Copyright 2017 | All Rights Reserved. - Sit On Chair</small>
+				</div>
+        <div class="col">
+          sit <span class="bold">on</span> chair
+        </div>
+				<div class="col">
+					<a href="#"><img src="image/flickr.png" alt="flickr"></a>
+					<a href="#"><img src="image/vimeo.png" alt="vimeo"></a>
+					<a href="#"><img src="image/pinterest.png" alt="pinterest"></a>
+					<a href="#"><img src="image/twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>

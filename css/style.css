@@ -151,7 +151,7 @@ section:nth-of-type(1) {
   position: relative;
 }
 
-img {
+img.chair {
   width: 100%;
   transform: scale(1.07);
   padding-top: 76px;
@@ -406,7 +406,7 @@ sup {
   background-color: #f1f1f1;
 }
 
-a.button {
+a.button-join {
   position: absolute;
   bottom: 20px;
   left: 105px;
@@ -423,7 +423,7 @@ a.button {
   border-radius: 10px;
 }
 
-.card:hover .button {
+.card:hover .button-join {
   background-color: #f9f9f9;
   color: #00c4aa;
   cursor: pointer;
@@ -433,21 +433,24 @@ a.button {
 
 
 section:nth-of-type(4) {
-    background: white;
+  background: white;
 }
 
 section:nth-of-type(4) .container {
   padding: 30px 67px;
-  border: 1px solid red;
 }
 
+section:nth-of-type(4) .col:nth-child(1) {
+  width:60%;
+}
 section:nth-of-type(4) h2.heading {
   padding-top: 0;
   margin-left: 0px;
   margin-bottom: 42px;
 }
-
-input {
+input#email,
+input#name {
+  font-family: Raleway, sans-serif;
   display:block;
   margin-bottom: 27px;
   width: 100%;
@@ -463,15 +466,104 @@ input:focus {
 
 
 input::placeholder {
-  color: #afafaf;
+  color: #cccccc;
 }
 
 textarea {
+  font-family: Raleway, sans-serif;
   border: 1px solid #00c4aa;
+  width: 100%;
   outline: none;
   resize: none;
+  padding: 12px;
+  font-size: 32px;
+}
+
+textarea::placeholder {
+  color: #cccccc;
 }
 
 textarea:focus {
   box-shadow: 0 0 15px 1px #00c4aa;
+}
+
+
+/*SECTION 4 RIGHT SIDE*/
+
+section:nth-of-type(4) .col:nth-child(2){
+  width: 40%;
+  padding: 0 57px;
+}
+
+img.red-chair {
+  padding: 53px 19px;
+  display: block;
+}
+
+input[type = 'checkbox'] {
+
+}
+
+
+
+[checkbox] + label {
+  display: inline-block;
+}
+
+a.button-send {
+  display: block;
+  text-transform: uppercase;
+  padding:10px 40px;
+  background: #00c4aa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+footer .container {
+  height: 103px;
+  padding: 0 68px;
+  color: #888888;
+}
+
+small {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+footer.footer .container .col:nth-of-type(1){
+  margin: 74px 0 52px 0;
+}
+
+footer.footer .container .col:nth-of-type(2),
+footer.footer .container .col:nth-of-type(3){
+  float: right;
+}
+
+
+
+footer .col:nth-of-type(2){
+  margin: 70px 10px 52px 10px;
+	text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+
+
+}
+
+.bold {
+  font-weight: 600;
+}
+
+
+footer .col:nth-of-type(3){
+  margin-right: 53px;
+  margin-top: 59px;
 }

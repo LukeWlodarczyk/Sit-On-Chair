@@ -1,0 +1,36 @@
+header, section, footer {
+  font-family: Raleway, sans-serif;
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.highlight {
+  color: #00c4aa;
+  font-weight: bolder;
+}
+
+header {
+  background: black;
+  height: 41px;
+  color: #ffffff;
+
+  .container {
+    padding: 12px 58px;
+
+    .logo {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+  }
+
+
+}

@@ -1,4 +1,6 @@
-header, section, footer {
+footer,
+header,
+section {
   font-family: Raleway, sans-serif;
   display: block;
   width: 100%;
@@ -6,16 +8,17 @@ header, section, footer {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .highlight {
-  color: #00c4aa;
+  color: $mainColor;
   font-weight: bolder;
 }
-
+//Header
 header {
   background: black;
-  height: 41px;
+  min-height: 41px;
   color: #ffffff;
 
   .container {
@@ -30,7 +33,74 @@ header {
       color: #ffffff;
     }
 
+    .nav {
+      float: right;
+
+      li {
+        display: inline-block;
+        margin: 0 20px;
+        padding-bottom: 15px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        a:hover {
+          cursor: pointer;
+          color: $mainColor;
+        }
+
+        ul {
+          position: absolute;
+          width: 120px;
+          height: 111px;
+          top: 28px;
+          left: -23px;
+          background: #000000;
+          border-top: 13px solid white;
+          position: absolute;
+          display: none;
+
+          li {
+            margin: 0;
+            display: block;
+            padding-bottom: 0;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: -10px;
+              left: 50px;
+              z-index: 1;
+              width: 0;
+              height: 0;
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-bottom: 10px solid black;
+            }
+
+            a {
+              display: block;
+              font-size: 14px;
+              padding-top: 14px;
+              padding-left: 12px;
+              font-weight: 400;
+              text-transform: none;
+            }
+          }
+        }
+
+        &.aboutComList {
+          position: relative;
+        }
+
+        &:hover ul {
+          display: block;
+          z-index: 1;
+        }
+      }
+    }
   }
-
-
 }

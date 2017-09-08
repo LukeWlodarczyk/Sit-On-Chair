@@ -390,3 +390,136 @@ section:nth-of-type(4) {
   }
 
 }
+
+// SECTION 5
+
+section:nth-of-type(5) {
+  background: white;
+  padding: 2em 1em;
+
+  .heading {
+    padding-top: 0;
+    margin-left: 0px;
+    margin-bottom: 42px;
+  }
+
+  input#email, input#name {
+    font-family: Raleway, sans-serif;
+    display: block;
+    margin-bottom: 27px;
+    width: 100%;
+    font-size: 30px;
+    padding: 15px;
+    border: 1px solid  $mainColor;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 0 4px 1px  $mainColor;
+    }
+
+    &::placeholder {
+      color: #cccccc;
+    }
+
+  }
+
+  textarea {
+    font-family: Raleway, sans-serif;
+    border: 1px solid  $mainColor;
+    width: 100%;
+    outline: none;
+    resize: none;
+    padding: 12px;
+    font-size: 32px;
+
+    &::placeholder {
+      color: #cccccc;
+    }
+
+    &:focus {
+      box-shadow: 0 0 4px 1px  $mainColor;
+    }
+  }
+
+
+  .checkbox {
+    position: relative;
+    padding: 30px 30px 30px 0;
+    input {
+      display: block;
+      opacity: 0;
+      height: 48px;
+      position: absolute;
+      width: 48px;
+      cursor: pointer;
+
+      &:checked + label::after {
+        display: block;
+      }
+    }
+
+    label {
+      display: block;
+      padding-left: 65px;
+      position: relative;
+      font-size: 28px;
+      color: #cecece;
+      line-height: 120%;
+      padding-top: 10px;
+      cursor: pointer;
+      &::before,
+      &::after {
+        border: 1px solid  $mainColor;
+        content: "";
+        display: block;
+        left: 0;
+        height: 48px;
+        position: absolute;
+        width: 48px;
+        top: 0;
+      }
+
+      &::after {
+        background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+        border: 0;
+        display: none;
+      }
+
+    }
+
+
+  }
+
+  .button-send {
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 17px 115px;
+    color: #ffffff;
+    background: #00c4aa;
+    border: 2px solid #00c4aa;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+      border: 2px solid #00c4aa;
+      color: #00c4aa;
+      background: transparent;
+      cursor: pointer;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+}

@@ -403,6 +403,8 @@ section:nth-of-type(5) {
     margin-bottom: 42px;
   }
 
+
+
   input#email, input#name {
     font-family: Raleway, sans-serif;
     display: block;
@@ -441,6 +443,11 @@ section:nth-of-type(5) {
     }
   }
 
+  .form-accept {
+    text-align: center;
+    padding: 2em;
+  }
+
 
   .checkbox {
     position: relative;
@@ -469,7 +476,7 @@ section:nth-of-type(5) {
       cursor: pointer;
       &::before,
       &::after {
-        border: 1px solid  $mainColor;
+        border: 1px solid $mainColor;
         content: "";
         display: block;
         left: 0;
@@ -498,15 +505,14 @@ section:nth-of-type(5) {
     font-weight: bold;
     padding: 17px 115px;
     color: #ffffff;
-    background: #00c4aa;
-    border: 2px solid #00c4aa;
+    background: $mainColor;
+    border: 2px solid $mainColor;
     border-radius: 10px;
     text-align: center;
     transition: .3s;
 
     &:hover {
-      border: 2px solid #00c4aa;
-      color: #00c4aa;
+      color: $mainColor;
       background: transparent;
       cursor: pointer;
     }

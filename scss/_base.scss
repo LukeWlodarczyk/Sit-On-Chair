@@ -199,9 +199,13 @@ section:nth-of-type(2) {
     position: relative;
     height: 240px;
     width: 330px;
+    overflow: hidden;
+
+
 
     &:hover .opacityBg {
       opacity: 0;
+      transform: translate(0, -200px)
     }
   }
 
@@ -397,12 +401,15 @@ section:nth-of-type(5) {
   background: white;
   padding: 2em 1em;
 
-  .heading {
-    padding-top: 0;
-    margin-left: 0px;
-    margin-bottom: 42px;
+  h2.heading {
+    width: 320px;
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-bottom: 4px;
+    font-size: 22px;
+    border-bottom: 10px solid $mainColor;
+    margin-bottom: 75px;
   }
-
 
 
   input#email, input#name {
@@ -519,13 +526,32 @@ section:nth-of-type(5) {
 
   }
 
+}
 
 
+//FOOTER
 
+footer {
 
+  .container {
+    height: 103px;
+    color: #888888;
 
+    a {
+      color: #888888;
+    }
 
+    .bold {
+      font-weight: 600;
+    }
 
+    small {
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
 
-
+    .footer-margin {
+      margin: 1em 0;
+    }
+  }
 }

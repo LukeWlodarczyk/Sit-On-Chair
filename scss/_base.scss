@@ -116,7 +116,7 @@ header {
 
 // SECTION 1
 
-section:nth-of-type(1) {
+section.banner {
   background: rgba(255,255,255,1);
   background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 8%, rgba(255,255,255,0.99) 77%, rgba(178,178,178,0.99) 91%, rgba(128,128,128,0.99) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(255,255,255,1)), color-stop(77%, rgba(255,255,255,0.99)), color-stop(91%, rgba(178,178,178,0.99)), color-stop(100%, rgba(128,128,128,0.99)));
@@ -265,7 +265,9 @@ section:nth-of-type(3) {
     background-color: #f9f9f9;
     border: 1px solid #c1c1c1;
     margin: 2em 1em;
+    margin-bottom: 6em;
     transition: .3s;
+
 
     &:hover {
       border: 1px solid $mainColor;
@@ -388,12 +390,131 @@ section:nth-of-type(4) {
   background-color: #f9f9f9;
   padding:30px 0;
 
-  h3 {
-  color: #575757;
-  font-size: 18px;
+  h3.heading {
+    width: 320px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    font-size: 18px;
+    border-bottom: 10px solid $mainColor;
+    margin-left: 16px;
+    margin-bottom: 75px;
+  }
+
+  .inline {
+    display:inline-block;
+    width:300px;
+    padding:14px;
+    vertical-align: top;
+  }
+
+  .form {
+    margin-top:50px;
+
+    .drop_down_list {
+      border:1px solid #8de0d2;
+      width: 280px;
+      height:38px;
+      background-color: white;
+      margin-top:22px;
+      padding: 8px 12px;
+      position: relative;
+
+      .list_label {
+        font-size: 30px;
+        color: #e2e2e2;
+        font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
+      }
+
+      .list_arrow {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #24baa0;
+        display:block;
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        cursor: pointer;
+      }
+
+      .list_panel {
+        background-color: white;
+        border: 1px solid #ccc;
+        width: 288px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        list-style: none;
+        margin: 0;
+        left: 0px;
+        z-index: 2;
+        position: absolute;
+        top: 54px;
+        display:none;
+
+        li {
+          margin-top:10px;
+          cursor: pointer;
+          color: #585858;
+        }
+      }
+    }
+
+    .checkbox {
+      position: relative;
+      padding: 30px 30px 30px 0;
+
+      input {
+        display: block;
+        opacity: 0;
+        height: 48px;
+        position: absolute;
+        width: 48px;
+        cursor: pointer;
+
+        &:checked + label::after {
+          display: block;
+        }
+      }
+
+      label {
+        display: block;
+        padding-left: 65px;
+        position: relative;
+        font-size: 28px;
+        color: #cecece;
+        line-height: 120%;
+        padding-top: 10px;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+          border: 1px solid #27c7ab;
+          content: "";
+          display: block;
+          left: 0;
+          height: 48px;
+          position: absolute;
+          width: 48px;
+          top: 0;
+        }
+
+        &::after {
+          background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+          border: 0;
+          display: none;
+        }
+
+      }
+
+    }
+
+
   }
 
 }
+
+
 
 // SECTION 5
 
@@ -505,12 +626,11 @@ section:nth-of-type(5) {
   }
 
   .button-send {
-    margin: 0 auto;
     text-transform: uppercase;
-    text-decoration: none;
     font-size: 31px;
     font-weight: bold;
-    padding: 17px 115px;
+    width: 80%;
+    padding: 17px 0;
     color: #ffffff;
     background: $mainColor;
     border: 2px solid $mainColor;

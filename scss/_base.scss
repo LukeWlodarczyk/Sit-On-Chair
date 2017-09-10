@@ -510,6 +510,120 @@ section:nth-of-type(4) {
 
   }
 
+  .summary_panel {
+    width: 320px;
+    padding:10px;
+
+
+    h3.heading {
+      width: 320px;
+      text-transform: uppercase;
+      padding-top: 34px;
+      padding-bottom: 4px;
+      font-size: 20px;
+      border-bottom: 10px solid $mainColor;
+      margin-bottom:50px;
+    }
+
+    .panel {
+      background-color: white;
+
+
+
+
+      .panel_left {
+        display: inline-block;
+        width: 185px;
+        vertical-align: top;
+        padding-bottom:10px;
+        border-bottom:1px solid #e7e7e7;
+        height: 135px;
+
+        h4{
+          padding: .5em;
+          color: #24baa0;
+          font-size: 23px;
+        }
+
+        span{
+          margin-top:10px;
+          font-size: 22px;
+          padding: .5em;
+          color: #5b5a5a;
+          display: block;
+        }
+
+      }
+
+      .panel_right {
+        display: inline-block;
+        width: 100px;
+        border-left:1px solid #e7e7e7;
+        text-align: right;
+        vertical-align: top;
+        padding-bottom:10px;
+        border-bottom:1px solid #e7e7e7;
+        height: 135px;
+
+        h4{
+          color: #24baa0;
+          font-size: 23px;
+        }
+
+        span {
+          display: block;
+          font-size: 22px;
+          color: #24baa0;
+          margin-top:10px;
+        }
+
+      }
+
+      .sum_label{
+        display: inline-block;
+        padding: .5em;
+        width: 185px;
+        margin-top: 10px;
+        font-size: 22px;
+        color: #5b5a5a;
+      }
+
+      .sum {
+        display: inline-block;
+        padding: .5em;
+        width: 100px;
+        text-align: right;
+        margin-top: 10px;
+        font-size: 22px;
+        color: #24baa0;
+      }
+
+    }
+
+    .button-order {
+      margin: 1em 0;
+      text-transform: uppercase;
+      font-size: 31px;
+      font-weight: bold;
+      width: 90%;
+      padding: .5em 0;
+      color: #ffffff;
+      background: $mainColor;
+      border: 2px solid $mainColor;
+      border-radius: 10px;
+      text-align: center;
+      transition: .3s;
+
+      &:hover {
+        color: $mainColor;
+        background: transparent;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
 
 }
 

@@ -467,7 +467,7 @@ section:nth-of-type(4) {
         left: 0px;
         z-index: 2;
         position: absolute;
-        top: 29px;
+        top: 39px;
         display: none;
 
         li {
@@ -581,15 +581,14 @@ section:nth-of-type(4) {
 
         span{
           margin-top:10px;
-          font-size: 22px;
-          padding: .5em;
+          font-size: 1em;
           color: #5b5a5a;
           display: block;
         }
 
       }
 
-      .panel_right {
+      .panel_right { 
         display: inline-block;
         width: 100px;
         border-left:1px solid #e7e7e7;

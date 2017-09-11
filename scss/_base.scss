@@ -155,7 +155,7 @@ section:nth-of-type(1) {
     height: 400px;
   }
 
-  .chair {
+  .chairSlider {
     display: none;
   }
 
@@ -220,7 +220,7 @@ section:nth-of-type(2) {
     font-size: 1em;
     font-weight: bold;
     margin: 13px 15px;
-    border-bottom: 7px solid #00c4aa;
+    border-bottom: 7px solid $mainColor;
   }
 
   .box {
@@ -431,8 +431,7 @@ section:nth-of-type(4) {
   .form {
 
     .drop_down_list {
-      border:1px solid #8de0d2;
-      width: 280px;
+      border:1px solid $mainColor;
       height: 40px;
       background-color: white;
       margin-top:22px;
@@ -450,7 +449,7 @@ section:nth-of-type(4) {
         height: 0;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-top: 15px solid #24baa0;
+        border-top: 15px solid $mainColor;
         display: block;
         position: absolute;
         right: 6px;
@@ -460,8 +459,8 @@ section:nth-of-type(4) {
 
       .list_panel {
         background-color: white;
-        border: 1px solid #24baa0;
-        width: 280px;
+        border: 1px solid $mainColor;
+        width: 100%;
         list-style: none;
         margin: 0;
         left: 0px;
@@ -476,7 +475,7 @@ section:nth-of-type(4) {
           color: #585858;
 
           &:hover {
-            background-color: #24baa0;
+            background-color: $mainColor;
           }
         }
       }
@@ -518,7 +517,7 @@ section:nth-of-type(4) {
 
         &::before,
         &::after {
-          border: 1px solid #27c7ab;
+          border: 1px solid $mainColor;
           content: "";
           display: block;
           left: 0;
@@ -540,7 +539,11 @@ section:nth-of-type(4) {
 
   }
   .image {
-    height: 300px;
+    height: 400px;
+
+    .chairOrder {
+      transform: scale(1.2);
+    }
   }
 
 
@@ -574,13 +577,14 @@ section:nth-of-type(4) {
         height: 135px;
 
         h4{
-          padding: .5em;
+          padding: .2em;
           color: #24baa0;
-          font-size: 23px;
+          font-size: 1.2em;
         }
 
         span{
           margin-top:10px;
+          padding: .2em;
           font-size: 1em;
           color: #5b5a5a;
           display: block;
@@ -588,7 +592,7 @@ section:nth-of-type(4) {
 
       }
 
-      .panel_right { 
+      .panel_right {
         display: inline-block;
         width: 100px;
         border-left:1px solid #e7e7e7;
@@ -599,15 +603,17 @@ section:nth-of-type(4) {
         height: 135px;
 
         h4{
-          color: #24baa0;
-          font-size: 23px;
+          color: $mainColor;
+          padding: .2em;
+          font-size:1.2em;
         }
 
         span {
           display: block;
-          font-size: 22px;
-          color: #24baa0;
           margin-top:10px;
+          padding: .2em;
+          font-size: 1em;
+          color: #5b5a5a;
         }
 
       }
@@ -628,7 +634,7 @@ section:nth-of-type(4) {
         text-align: right;
         margin-top: 10px;
         font-size: 22px;
-        color: #24baa0;
+        color: $mainColor;
       }
 
     }
@@ -638,7 +644,7 @@ section:nth-of-type(4) {
       text-transform: uppercase;
       font-size: 31px;
       font-weight: bold;
-      width: 90%;
+      width: 100%;
       padding: .5em 0;
       color: #ffffff;
       background: $mainColor;

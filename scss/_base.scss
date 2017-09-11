@@ -117,6 +117,7 @@ header {
 // SECTION 1
 
 section:nth-of-type(1) {
+  position: relative;
   background: rgba(255,255,255,1);
   background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 8%, rgba(255,255,255,0.99) 77%, rgba(178,178,178,0.99) 91%, rgba(128,128,128,0.99) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(255,255,255,1)), color-stop(77%, rgba(255,255,255,0.99)), color-stop(91%, rgba(178,178,178,0.99)), color-stop(100%, rgba(128,128,128,0.99)));
@@ -126,17 +127,45 @@ section:nth-of-type(1) {
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 8%, rgba(255,255,255,0.99) 77%, rgba(178,178,178,0.99) 91%, rgba(128,128,128,0.99) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#808080', GradientType=0 );
 
+
+  .leftArrow {
+    display: block;
+    position: absolute;
+    top: calc(50% - 54px);
+    left: .5em;
+    font-size: 4em;
+    color: $mainColor;
+    cursor: pointer;
+  }
+
+  .rightArrow {
+    display: block;
+    position: absolute;
+    top: calc(50% - 54px);
+    right: .5em;
+    font-size: 4em;
+    color: $mainColor;
+    cursor: pointer;
+  }
+
+
+
+
   .center {
     height: 400px;
   }
 
   .chair {
-    transform: scale(1.2);
+    display: none;
+  }
+
+  .visible {
+    display: block;
   }
 
   article {
     text-align: center;
-    width: 100%;
+    width: 75%;
     padding: 1em;
 
     h1 {
@@ -459,6 +488,7 @@ section:nth-of-type(4) {
 
     }
 
+
     .checkbox {
       position: relative;
       padding: 30px 30px 30px 0;
@@ -509,16 +539,20 @@ section:nth-of-type(4) {
     }
 
   }
+  .image {
+    height: 300px;
+  }
+
 
   .summary_panel {
     width: 320px;
-    padding:10px;
+
 
 
     h3.heading {
       width: 320px;
       text-transform: uppercase;
-      padding-top: 34px;
+      padding-top: 45px;
       padding-bottom: 4px;
       font-size: 20px;
       border-bottom: 10px solid $mainColor;
